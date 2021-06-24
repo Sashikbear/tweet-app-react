@@ -11,10 +11,12 @@ function Profile() {
 		setUserName(event.target.value);
 	};
 	useEffect(() => {
-		if (userName.length > 0) {
-			setIsDisabled(false);
-		} else {
-			setIsDisabled(true);
+		if (userName) {
+			if (userName.length > 0) {
+				setIsDisabled(false);
+			} else {
+				setIsDisabled(true);
+			}
 		}
 	}, [userName]);
 	const handleProfileNameSubmit = (event) => {
