@@ -156,6 +156,11 @@
 		top: 80px;
 		width: 95vw;
 	}
+	.navbar {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 40px;
+	}
 	.user-date {
 		display: flex;
 		flex-direction: column;
