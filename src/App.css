@@ -156,16 +156,18 @@
 		top: 80px;
 		width: 95vw;
 	}
-	.navbar {
-		position: -webkit-sticky;
-		position: sticky;
-		top: 40px;
-	}
 	.user-date {
 		display: flex;
 		flex-direction: column;
 	}
 	.tweet-item {
 		width: 85vw;
+	}
+	.error {
+		width: 80vw;
+		height: 7vh;
+	}
+	.error-button-wrapper {
+		display: flex;
 	}
 }
