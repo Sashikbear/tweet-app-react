@@ -9,7 +9,7 @@
 	align-items: center;
 }
 .create-tweet-wrapper {
-	width: 630px;
+	width: 47vw;
 	height: 180px;
 	border: 2px solid #cccccc;
 	box-sizing: border-box;
@@ -29,7 +29,7 @@
 }
 .tweet-item {
 	padding: 20px;
-	width: 600px;
+	width: 45vw;
 	height: 100px;
 	border-radius: 6px;
 	background-color: #343a40;
@@ -118,8 +118,8 @@
 	}
 }
 .navbar {
-	width: 1076px;
-	background: #343a40;
+	width: 80%;
+	background-color: #343a40;
 	border-radius: 6px;
 	font-size: 14px;
 	font-weight: bold;
@@ -144,4 +144,28 @@
 	background: #15202b;
 	color: white;
 	margin: 10px 0;
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	.App {
+		min-height: 100vh;
+		width: 100vw;
+	}
+	.create-tweet-wrapper {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 80px;
+		width: 95vw;
+	}
+	.navbar {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 40px;
+	}
+	.user-date {
+		display: flex;
+		flex-direction: column;
+	}
+	.tweet-item {
+		width: 85vw;
+	}
 }
